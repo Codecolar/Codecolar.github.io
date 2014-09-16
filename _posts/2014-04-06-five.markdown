@@ -1,7 +1,0 @@
----
-layout: default
-date:   2014-04-06 23:26:12
-photo: 1.jpg
-caption_header: 以后给我老实点！
-caption: 
----

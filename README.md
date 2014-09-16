@@ -1,32 +1,35 @@
-Jekyll Photo Grid Gallery
-=========
+# Simpleyyt
 
-Jekyll theme based on [Blueprint: Google Grid Gallery](http://tympanus.net/codrops/?p=18699)
+My blog based on Jekyll-Bootstrap.
 
-## How to use
-1. Place a large image in `/img/large/`
-2. Place a thumbnail version of the same image in `/img/thumb/`. _Remember to use the same file name_
-3. Construction a post to display the image. Use the follow as an example:
-```txt
----
-layout: default
-date:   2014-04-06 23:26:12
-photo: 1.png
-caption_header: Sample header
-caption: sample caption
----
-```
-4. And finally, serve Jekyll source as you would normally.
+## About Jekyll-Bootstrap
 
-## [Demo](https://nadjetey.github.io/GridGallery)
+For all usage and documentation please see: <http://jekyllbootstrap.com>
 
-View this jekyll theme in action [here](https://nadjetey.github.io/GridGallery)
+## About theme
 
-## Screenshot
-![screenshot](https://raw.github.com/nadjetey/GridGallery/master/jggg.png)
+This theme is the copy of [elementaryOS](http://elementaryos.org) portal page. Some features are imperfect, but I will make it more perfect.
 
-Localhost deployment
-=========
-After [downloading](https://github.com/nadjetey/GridGallery/archive/master.zip), use the normal process of serving a jekyll site. Navigate to the directory in terminal and type `jekyll build` followed by `jekyll serve`
+## Usage
 
-For more details, read [documentation](http://jekyllrb.com/)
+You can edit the `_config.yml` file to change the setting of site. If you want to change avatar or favicon, just replace the files in `assets\themes\Snail\img`.
+
+## About excerpt
+
+There are 2 ways of excerpt: "teaser" and "truncate_words" (Configurated in _config.yml).
+
+ * "teaser": look for the More tag (<!--more-->) and create a teaser from the content that precedes the More tag.
+You must place "<!--more-->" at paragraph in post. The whole content will be displayed in homepage if no More tag found in post.
+
+ * "truncate_words": generate an excerpt automatically by selecting the first 20 words of the post. It doesn't work well in some of no-English post.
+
+## Change Log
+
+ * Add pagination.
+ * Add new way of excerpt.
+ * Download google fonts to the local.
+ * Add google custom search engine.
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
